@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="login_register_margin_top">5dp</dimen>
+    <dimen name="login_register_margin_bottom">5dp</dimen>
+	<dimen name="image_size_old">65dp</dimen>    
+	<dimen name="image_size">60dp</dimen>    
+	<dimen name="battery_image_width">64dp</dimen>    
+	<dimen name="battery_image_height">49dp</dimen>    
+	<dimen name="daily_reading_padding_left">19dp</dimen>    
+	<dimen name="daily_reading_padding_right">20dp</dimen>    
+	<dimen name="win_text_title_size">15sp</dimen>    
+	<dimen name="win_text_hours_size">20sp</dimen>    
+	<dimen name="prize_text_title_size">14sp</dimen>    
+</resources>

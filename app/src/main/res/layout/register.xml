@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/summer_bg_green"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" > <!-- android:background="#ffffff"> -->
+
+
+        <!-- Header  Starts -->
+        <!-- android:background="@drawable/header_gradient" -->
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" 
+            android:gravity="center" >
+
+            <!-- Logo Start -->
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/homeheader" />
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!-- Header Ends -->
+        <!-- Footer Start
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:gravity="center"
+                android:src="@drawable/homefooter" />
+        </LinearLayout>
+
+Footer Ends -->
+
+
+        <!-- Registration Form -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:orientation="vertical"
+            android:background="@color/White"
+            android:padding="10dip" >
+
+            <!-- Full Name Label -->
+
+            <EditText
+                android:id="@+id/reg_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_register_margin_bottom"
+                android:layout_marginTop="@dimen/login_register_margin_top"
+                android:hint="@string/label_username"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textSize="12sp" />
+            <!-- Pin -->
+
+            <EditText
+                android:id="@+id/reg_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_register_margin_bottom"
+                android:layout_marginTop="@dimen/login_register_margin_top"
+                android:fontFamily="sans-serif"
+                android:hint="@string/label_pin"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:textSize="12sp" />
+            <!-- Name Label 
+
+            <EditText
+                android:id="@+id/reg_fullname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_register_margin_bottom"
+                android:layout_marginTop="@dimen/login_register_margin_top"
+                android:hint="@string/label_name"
+                android:singleLine="true"
+                android:textSize="12sp" />
+                
+			-->                
+            <!-- Email Label -->
+
+            <EditText
+                android:id="@+id/reg_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_register_margin_bottom"
+                android:layout_marginTop="@dimen/login_register_margin_top"
+                android:hint="@string/label_email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+            <!-- Email Label -->
+
+            <EditText
+                android:id="@+id/reg_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_register_margin_bottom"
+                android:layout_marginTop="@dimen/login_register_margin_top"
+                android:hint="@string/label_phone"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_register_margin_bottom"
+                android:layout_marginTop="@dimen/login_register_margin_top" />
+
+			<Spinner
+			    android:id="@+id/language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_register_margin_bottom"
+                android:layout_marginTop="@dimen/login_register_margin_top"
+			    android:entries="@array/languages"
+			    android:prompt="@string/languages_prompt" />
+ 
+            <View style="@style/DividerHorizontal"
+		        android:id="@+id/firstDivider"
+		        android:layout_marginTop="15dip"
+			    />
+            
+            <!-- Register Button -->
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+	            android:background="@color/LibraryRed"
+                android:text="@string/label_register" />
+            <!-- Link to Login Screen -->
+
+            <TextView
+                android:id="@+id/link_to_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="@string/label_login_in_register"
+                android:textColor="#025f7c"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <!-- Registration Form Ends -->
+    </RelativeLayout>
+
+</ScrollView>

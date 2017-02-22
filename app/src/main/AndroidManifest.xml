@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sccl.summerreadingapp"
+    android:versionCode="21"
+    android:versionName="2.0.8" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+ 	<!-- Internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <application
+        android:allowBackup="true"
+        android:name="com.sccl.summerreadingapp.SummerReadingApplication"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sccl.summerreadingapp.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sccl.summerreadingapp.LoginActivity"
+                  android:label="Login to your Account"></activity>
+        <activity android:name="com.sccl.summerreadingapp.RegistrationActivity"
+                  android:label="Register New Account"></activity>
+        <activity android:name="com.sccl.summerreadingapp.ChooseUserFromListActivity"
+                  android:label="Select Family Member"></activity>
+        <activity android:name="com.sccl.summerreadingapp.AddUserActivity"
+                  android:label="Add a Family Member"></activity>
+        </application>
+
+</manifest>

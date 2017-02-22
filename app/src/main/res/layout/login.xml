@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/summer_bg_green"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" > <!-- android:background="#ffffff"> -->
+
+
+        <!-- Header Starts -->
+        <!-- android:background="@drawable/header_gradient" -->
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" 
+            android:gravity="center" >
+
+            <!-- Logo Start -->
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:src="@drawable/homeheader" />
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!-- Header Ends -->
+
+
+        <!-- Footer Start -->
+        <!--
+            Place footer next to header to set z-index property to minus value
+		    android:background="@drawable/footer_repeat"
+        -->
+        <!--
+		 <LinearLayout android:id="@+id/footer"
+		    android:layout_width="fill_parent"
+		    android:background="@drawable/footer_repeat"
+		    android:layout_height="90dip"
+		    android:layout_alignParentBottom="true">
+         <TextView android:id="@+id/link_to_register1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="#0b84aa"/>
+
+  	</LinearLayout>
+        -->
+
+
+        <!--
+                android:layout_marginTop="40dip"
+                android:layout_marginBottom="40dip"
+        -->
+
+        <!-- Footer starts 
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dip"
+                android:gravity="center"
+                android:src="@drawable/homefooter" />
+        </LinearLayout>
+Footer Ends -->
+
+
+        <!-- Login Form -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@color/White"
+            android:orientation="vertical"
+            android:padding="10dip" >
+<!--             android:background="@color/LightBlue"
+ -->
+            
+            
+            <!--
+          Email Label
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Phone or User Name"
+            -->
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_register_margin_bottom"
+                android:layout_marginTop="@dimen/login_register_margin_top"
+                android:hint="@string/label_username"
+                android:singleLine="true"
+                android:textSize="12sp" />
+            <!--
+          Password Label
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+            -->
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_register_margin_bottom"
+                android:layout_marginTop="@dimen/login_register_margin_top"
+                android:fontFamily="sans-serif"
+                android:hint="@string/label_pin"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/firstDivider"
+                style="@style/DividerHorizontal"
+                android:layout_marginTop="15dip" />
+
+            <!-- Login button -->
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+	            android:background="@color/LibraryOrange"
+                android:text="@string/label_login" />
+
+            <Button
+                android:id="@+id/link_to_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+	            android:background="@color/LibraryRed"
+                android:text="@string/label_register" />
+
+            <!--
+          Link to Registration Screen
+ 
+          <TextView android:id="@+id/link_to_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:layout_marginBottom="15dip"
+                android:text="@string/label_register_in_login"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="#0b84aa"/>
+            -->
+
+        </LinearLayout>
+        <!-- Login Form Ends -->
+
+    </RelativeLayout>
+
+</ScrollView>

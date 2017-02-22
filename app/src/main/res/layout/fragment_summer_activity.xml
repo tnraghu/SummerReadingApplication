@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/summer_bg_green"
+    android:fillViewport="true" >
+
+<!--  RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textGridTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/title_activity_grid"
+        android:textColor="@color/LibraryTextGreen"
+        android:paddingLeft="5dip"
+        android:textStyle="bold" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textGridTitle"
+        android:columnWidth="120dp"
+        android:gravity="center"
+        android:horizontalSpacing="2dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dip" />
+    <!--
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentTop="true"
+     android:background="@drawable/image_border"
+    -->
+
+
+    <!--
+    <TextView
+        android:id="@+id/textPrizeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_below="@id/gridview"
+        android:text="@string/title_activity_prizes"
+		android:background="@color/White"
+        android:paddingLeft="5dip"
+        android:textColor="@color/LibraryTextGreen"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/prize_images"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPrizeTitle"
+        android:layout_marginTop="5dip"
+        android:weightSum="3" >
+    -->
+
+        <!--  android:layout_above="@id/footer"  
+        android:paddingBottom="5dip"
+        -->
+        <!-- android:layout_alignParentBottom="true"> -->
+        <!-- android:background="@drawable/image_border" -->
+
+    <!--
+        <ImageView
+            android:id="@+id/prize1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/prize_not_ready" />
+
+        <ImageView
+            android:id="@+id/prize2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/prize_not_ready" />
+
+        <ImageView
+            android:id="@+id/prize3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/prize_not_ready" />
+
+        <ImageView
+            android:id="@+id/prize4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/prize_not_ready" />
+
+        <ImageView
+            android:id="@+id/prize5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/prize_not_ready" />
+
+    </LinearLayout>
+-->
+
+        <!-- Footer starts 
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridview"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dip"
+            android:gravity="center"
+            android:src="@drawable/homefooter" />
+    </LinearLayout>
+Footer Ends -->
+
+</RelativeLayout>
+
+</ScrollView>

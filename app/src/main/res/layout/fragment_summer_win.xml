@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainScrollViewWin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/summer_bg_green"
+    android:fillViewport="true" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- Logo Start
+		android:background="@color/White"
+        android:textColor="@color/LibraryTextGreen"
+ 	-->    
+    <TextView
+        android:id="@+id/textYouHaveReadTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/title_activity_you_have_read"
+        android:paddingLeft="5dip"
+        android:textSize="@dimen/win_text_title_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textReadHoursAndMins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_below="@id/textYouHaveReadTitle"
+        android:text=""
+		android:background="@color/LibraryLightCyan"
+        android:textColor="@color/LibraryCyan"
+        android:paddingLeft="5dip"
+        android:textSize="@dimen/win_text_hours_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textPrizeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_below="@id/textReadHoursAndMins"
+        android:text="@string/title_activity_prizes"
+        android:paddingLeft="5dip"
+        android:textSize="@dimen/win_text_title_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/prize_images_header_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dip"
+        android:layout_below="@id/textPrizeTitle"
+        android:weightSum="3" >
+
+	    <TextView
+	        android:id="@+id/textPrizeHeaderTitle1"
+	        android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:layout_marginTop="0dip"
+        	android:layout_marginLeft="5dip"
+            android:gravity="center"
+	        android:text="@string/title_win_prize_header_1"
+			android:background="@color/LibraryNewGray"
+	        android:textColor="@color/White"
+	        android:textSize="@dimen/prize_text_title_size" />
+        
+	    <TextView
+	        android:id="@+id/textPrizeHeaderTitle2"
+	        android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:layout_marginTop="0dip"
+        	android:layout_marginLeft="5dip"
+            android:gravity="center"
+			android:background="@color/LibraryNewGray"
+	        android:textColor="@color/White"
+	        android:text="@string/title_win_prize_header_2"
+	        android:textSize="@dimen/prize_text_title_size" />
+	    
+	    <TextView
+	        android:id="@+id/textPrizeHeaderTitle3"
+	        android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:layout_marginTop="0dip"
+        	android:layout_marginLeft="5dip"
+            android:gravity="center"
+			android:background="@color/LibraryNewGray"
+	        android:textColor="@color/White"
+	        android:text="@string/title_win_prize_header_3"
+	        android:textSize="@dimen/prize_text_title_size" />
+		</LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/prize_images"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dip"
+        android:layout_below="@id/prize_images_header_text"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/prize1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+        	android:layout_marginLeft="5dip"
+            android:background="@drawable/win_image_border"
+            android:src="@drawable/prize_not_ready" />
+
+        <ImageView
+            android:id="@+id/prize2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+        	android:layout_marginLeft="5dip"
+            android:background="@drawable/win_image_border"
+            android:src="@drawable/prize_not_ready" />
+
+        <ImageView
+            android:id="@+id/prize3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+        	android:layout_marginLeft="5dip"
+            android:background="@drawable/win_image_border"
+            android:src="@drawable/prize_not_ready" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prize_images_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prize_images"
+        android:layout_marginRight="5dip"
+        android:weightSum="3" >
+
+	    <TextView
+	        android:id="@+id/textPrizeTitle1"
+	        android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:layout_marginTop="0dip"
+            android:gravity="center"
+        	android:layout_marginLeft="5dip"
+	        android:text="@string/title_win_prize_default"
+	        android:textSize="@dimen/prize_text_title_size" />
+        
+	    <TextView
+	        android:id="@+id/textPrizeTitle2"
+	        android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:layout_marginTop="0dip"
+            android:gravity="center"
+        	android:layout_marginLeft="5dip"
+	        android:text="@string/title_win_prize_default"
+	        android:textSize="@dimen/prize_text_title_size" />
+	    
+	    <TextView
+	        android:id="@+id/textPrizeTitle3"
+	        android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:layout_marginTop="0dip"
+            android:gravity="center"
+        	android:layout_marginLeft="5dip"
+	        android:text="@string/title_win_prize_default"
+	        android:textSize="@dimen/prize_text_title_size" />
+		</LinearLayout>
+    
+    <TextView
+        android:id="@+id/textReadingBadgesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_below="@id/prize_images_text"
+        android:text="@string/title_activity_badges"
+        android:paddingLeft="5dip"
+        android:textSize="@dimen/win_text_title_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/reading_badge_images"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textReadingBadgesTitle"
+        android:layout_marginTop="5dip"
+        android:weightSum="5" >
+
+        <ImageView
+            android:id="@+id/badge1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/designoff" />
+
+        <ImageView
+            android:id="@+id/badge2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/designoff" />
+
+        <ImageView
+            android:id="@+id/badge3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/designoff" />
+
+        <ImageView
+            android:id="@+id/badge4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/designoff" />
+
+        <ImageView
+            android:id="@+id/badge5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/designoff" />
+<!-- 
+        <ImageView
+            android:id="@+id/badge6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/designoff" />
+
+        
+        <ImageView
+            android:id="@+id/badge7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/designoff" />
+
+        <ImageView
+            android:id="@+id/badge8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/designoff" />
+
+        <ImageView
+            android:id="@+id/badge9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/designoff" />
+
+        <ImageView
+            android:id="@+id/badge10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/designoff" />
+
+        <ImageView
+            android:id="@+id/badge11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/designoff" />
+
+        <ImageView
+            android:id="@+id/badge12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/designoff" />
+            
+ -->
+        </LinearLayout>
+
+        <!-- Footer starts 
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reading_badge_images"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dip"
+            android:gravity="center"
+            android:src="@drawable/homefooter" />
+    </LinearLayout>
+Footer Ends -->
+
+</RelativeLayout>
+
+</ScrollView>

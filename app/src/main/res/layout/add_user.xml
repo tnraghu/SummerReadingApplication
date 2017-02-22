@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/summer_bg_green"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" > <!-- android:background="#ffffff"> -->
+
+
+        <!-- Header  Starts -->
+        <!-- android:background="@drawable/header_gradient" -->
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:gravity="center"
+            android:paddingTop="5dip" >
+
+            <!-- Logo Start -->
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/homeheader" />
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!-- Header Ends -->
+        <!-- android:background="@drawable/footer_repeat" -->
+
+        <!-- Footer starts 
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:gravity="center"
+                android:src="@drawable/homefooter" />
+        </LinearLayout>
+
+   footer ends -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:orientation="vertical"
+            android:background="@color/White"
+            android:padding="10dip" >
+
+<!--             android:background="@color/LightBlue"
+ -->
+            <!-- First Name Label -->
+
+            <EditText
+                android:id="@+id/add_fname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_register_margin_bottom"
+                android:layout_marginTop="@dimen/login_register_margin_top"
+                android:hint="@string/label_fname"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+            <!-- Last Name Label -->
+
+            <EditText
+                android:id="@+id/add_lname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_register_margin_bottom"
+                android:layout_marginTop="@dimen/login_register_margin_top"
+                android:hint="@string/label_lname"
+                android:singleLine="true"
+                android:textSize="12sp" />
+            
+            <EditText
+                android:id="@+id/add_lage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_register_margin_bottom"
+                android:layout_marginTop="@dimen/login_register_margin_top"
+                android:hint="@string/label_age"
+                android:singleLine="true"
+				android:inputType="number"
+                android:textSize="12sp" />
+            
+
+            <Spinner
+                android:id="@+id/reader_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_register_margin_bottom"
+                android:layout_marginTop="@dimen/login_register_margin_top" />
+            
+		 	<View style="@style/DividerHorizontal"
+		        android:id="@+id/firstDivider"
+		        android:layout_marginTop="15dip"
+			    />
+            
+            <!-- Button
+                android:id="@+id/btnAdd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:onClick="onButtonClickHandler"
+            	android:background="@color/LibraryOrange"
+                android:text="@string/label_add" / -->
+		 	
+			<RelativeLayout
+		        android:layout_width="match_parent"
+		        android:paddingLeft="5dip"
+		        android:paddingRight="5dip"
+		        android:layout_height="50dip">
+		            
+				<Button
+					android:id="@+id/btnAdd"
+		            android:layout_width='140dp'
+		            android:layout_height='wrap_content'
+		            android:layout_centerVertical="true"
+		            android:layout_alignParentLeft="true"
+                    android:onClick="onButtonClickHandler"
+		            android:text="@string/label_add" /> 
+		        
+		        <Button
+					android:id="@+id/btnDone"
+		            android:layout_width='140dp'
+		            android:layout_height='wrap_content'
+		            android:layout_centerVertical="true"
+		            android:layout_alignParentRight="true"
+                    android:onClick="onButtonClickHandler"
+		            android:text="@string/label_done" />
+			</RelativeLayout>
+        
+            <!--
+                android:entries="@array/reader_type"
+                android:prompt="@string/reader_type" />
+            -->
+
+        </LinearLayout>
+        
+	</RelativeLayout>
+
+</ScrollView>

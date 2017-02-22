@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/summer_bg_green"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" > <!-- android:background="#ffffff"> -->
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:gravity="center"
+            android:paddingTop="5dip" >
+
+			<ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:src="@drawable/homeheader" />
+        </LinearLayout>
+
+        <!-- Footer starts 
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dip"
+                android:gravity="center"
+                android:src="@drawable/homefooter" />
+        </LinearLayout>
+	 footer ends -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@color/White"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <Button
+                android:id="@+id/btnAdd"
+           		android:layout_alignParentBottom="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:onClick="onButtonClickHandler"
+                android:text="@string/label_choose_user_add" />
+            
+		    <TextView
+		        android:id="@+id/textChooseNameTitle"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/title_choose_user"
+				android:background="@color/White"
+		        android:textColor="@color/LibraryTextGreen"
+		        android:paddingLeft="5dip"
+	            android:paddingBottom="5dip"
+		        android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/user_list"
+            	android:layout_below="@id/textChooseNameTitle"
+            	android:layout_above="@id/btnAdd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="#b5b5b5"
+                android:dividerHeight="2dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
+<!-- 
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/summer_bg"
+    android:orientation="vertical" >
+     
+    <ListView
+        android:id="@+id/user_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+ 	<View style="@style/DividerHorizontal"
+        android:id="@+id/firstDivider"
+        android:layout_marginTop="15dip"
+	    />
+        
+  
+</LinearLayout>
+-->

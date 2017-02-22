@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+		android:layout_marginTop="2dip"
+		android:layout_marginBottom="6dip"
+        android:layout_marginLeft="@dimen/daily_reading_padding_left"
+        android:layout_marginRight="@dimen/daily_reading_padding_right"
+		android:background="@color/LibraryRed"
+        android:gravity="center"
+        android:text="@string/daily_reading_add_twenty" />
+
+    <Button
+        android:id="@+id/btn_remove_20"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+		android:layout_marginTop="2dip"
+		android:layout_marginBottom="6dip"
+        android:layout_marginLeft="@dimen/daily_reading_padding_left"
+        android:layout_marginRight="@dimen/daily_reading_padding_right"
+		android:background="@color/LibraryRed"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="@string/daily_reading_remove_twenty" />
+    
+    <LinearLayout
+		android:id="@+id/robotFullImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_ok"
+        android:layout_above="@id/btn_remove_20"
+	    android:visibility="invisible"
+        android:orientation="horizontal" >
+		<ImageView
+		    android:id="@+id/readimage"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:gravity="center"
+		    android:scaleType="fitXY"
+		    android:src="@drawable/appbattery" />
+    </LinearLayout>
+    
+    <LinearLayout
+		android:id="@+id/batteryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_ok"
+        android:layout_above="@id/btn_remove_20"
+        android:layout_marginLeft="@dimen/daily_reading_padding_left"
+        android:layout_marginRight="@dimen/daily_reading_padding_right"
+        android:orientation="horizontal" >
+
+        <!--
+
+        // below works well for 9 by 5 grid
+        android:layout_marginLeft="19dip"
+        android:layout_marginRight="20dip"
+
+        // below works well for 15 by 3 grid
+        android:layout_marginLeft="118dip"
+        android:layout_marginRight="118dip"
+
+            android:layout_marginLeft="49dip"
+            android:layout_marginRight="49dip"
+        -->
+		<GridView
+            android:id="@+id/gridviewDailyReading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="true"
+            android:columnWidth="120dp"
+            android:gravity="center"
+            android:horizontalSpacing="0dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="5"
+            android:padding="0dp"
+            android:stretchMode="columnWidth"
+            android:background="@drawable/read_background"
+            android:verticalSpacing="0dp" />
+        <!-- android:layout_alignParentBottom="true" -->
+    </LinearLayout>
+
+</RelativeLayout>
